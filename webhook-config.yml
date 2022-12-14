@@ -1,0 +1,16 @@
+# /var/lib/rancher/audit/webhook-config.yaml
+
+apiVersion: v1
+kind: Config
+clusters:
+- name: falco
+  cluster:
+    server: http://127.0.0.1:30007/k8s-audit
+contexts:
+- context:
+    cluster: falco
+    user: ""
+  name: default-context
+current-context: default-context
+preferences: {}
+users: []

@@ -1,0 +1,12 @@
+# /var/lib/rancher/k3os/config.yaml
+
+hostname: flycatcher-k8s
+k3os:
+  k3s_args:
+  - server  
+  - "--kube-apiserver-arg"
+  - "audit-log-path=/var/lib/rancher/audit/audit.log"
+  - "--kube-apiserver-arg"
+  - "audit-policy-file=/var/lib/rancher/audit/audit-policy.yaml"
+  - "--kube-apiserver-arg"
+  - "audit-webhook-config-file=/var/lib/rancher/audit/webhook-config.yaml"
