@@ -1,8 +1,8 @@
 # flycatcher-k8s
-k8os + security tools
+k3os + security tools
 
 ## Overview
-This is a collection of security tools customized for use in k8os.
+This is a collection of security tools customized for use in k3os.
 
 ## Usage
 See [pwn-k8s](https://github.com/ajmilazzo/pwn-k8s) for an exploitable example to trigger a number of security rules
